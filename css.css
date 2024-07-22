@@ -2058,27 +2058,43 @@ textarea.w-input, textarea.w-select {
   left: 0;
 }
 
+/* General styling for the layout container */
 .w-layout-blockcontainer {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.w-layout-layout {
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  grid-auto-columns: 1fr;
-  justify-content: center;
-  padding: 20px;
-}
-
-.w-layout-cell {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   display: flex;
+  justify-content: space-between; /* Aligns cells side-by-side */
 }
+
+/* Styling for each layout cell */
+.w-layout-cell {
+  flex: 1; /* Ensures cells take up equal space */
+  padding: 20px; /* Adds space inside each cell */
+}
+
+/* Optional: Add a border or background to distinguish cells */
+.w-layout-cell:nth-child(1) {
+  border-right: 1px solid #ddd; /* Adds a border between cells */
+}
+
+.w-layout-cell:nth-child(2) {
+  border-left: 1px solid #ddd; /* Adds a border between cells */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .w-layout-blockcontainer {
+    flex-direction: column; /* Stacks cells vertically on smaller screens */
+  }
+
+  .w-layout-cell {
+    margin-bottom: 20px; /* Adds space between stacked cells */
+  }
+
+  .w-layout-cell:last-child {
+    margin-bottom: 0; /* Removes margin from the last cell */
+  }
+}
+
+
 
 @media screen and (max-width: 991px) {
   .w-layout-blockcontainer {

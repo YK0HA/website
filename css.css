@@ -2228,7 +2228,7 @@ textarea.w-input, textarea.w-select {
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: #ffa585;
-  background-image: linear-gradient(90deg, #f9b16e, #f68080);
+  background-image: linear-gradient(90deg, #01C38D, #132D64);
   border-radius: 20px;
   margin-top: 20px;
   margin-left: 0;
@@ -2250,10 +2250,10 @@ textarea.w-input, textarea.w-select {
 }
 
 .button-primary.cheatcode {
-  color: #f68080;
+  color: #132D64;
   background-color: #ffa58500;
   background-image: none;
-  border: 6px solid #f68080;
+  border: 6px solid #132D64;
   padding: 6px 19px;
 }
 
@@ -2264,7 +2264,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .stats {
-  background-image: radial-gradient(circle, #f9b16e, #f68080);
+  background-image: radial-gradient(circle, #01C38D, #132D64);
 }
 
 .text-block {
@@ -2312,7 +2312,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .booking {
-  background-image: radial-gradient(circle, #f9b16e, #f68080);
+  background-image: radial-gradient(circle, #01C38D, #132D64);
 }
 
 .cell {
